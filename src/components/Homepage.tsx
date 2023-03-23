@@ -6,7 +6,7 @@ export default function Homepage() {
 	return (
 		<div className='flex flex-col items-center'>
 			<div className='text-center text-3xl font-bold'>
-				<h1 className='p-12 text-4xl'>
+				<h1 className='p-10 text-4xl'>
 					Welcome to <span className='text-blue-500'>CryptoWatch</span>!
 				</h1>
 			</div>
@@ -18,14 +18,15 @@ export default function Homepage() {
 					on the latest and greatest tokens.
 				</p>
 
-				<h3 className='pt-8'>
-					Powered by <span className='text-green-500'>CoinGecko</span>
+				<h3 className='pt-8 flex justify-center'>
+					Powered by <span className='text-green-500 pl-1'>CoinGecko</span>
+					<img src='/cg-logo.png' className='h-6 pl-1' />
 				</h3>
 			</div>
 
 			<div>
 				<button
-					onClick={() => router.push(`/TokenList`)}
+					onClick={() => router.push(`/PriceFeed`)}
 					className='p-6 px-14 rounded-xl bg-blue-500 hover:bg-blue-400/80 mt-10 font-semibold'>
 					Enter App
 				</button>

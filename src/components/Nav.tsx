@@ -1,10 +1,17 @@
+import { useRouter } from 'next/router';
 import SearchBar from './SearchBar';
 
 export default function Nav() {
+	const router = useRouter();
+
 	return (
-		<div className='border-b-2 border-slate-500/95'>
-			<nav className='flex p-2'>
-				<h1 className='text-4xl font-bold text-blue-500'>CryptoWatch</h1>
+		<div className='bg-slate-300 border-b border-slate-500/95'>
+			<nav className='flex p-3'>
+				<h1
+					onClick={() => router.push(`/`)}
+					className='text-4xl font-bold cursor-pointer text-blue-500'>
+					CryptoWatch
+				</h1>
 				<SearchBar />
 			</nav>
 		</div>

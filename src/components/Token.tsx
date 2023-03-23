@@ -1,12 +1,15 @@
 import PriceChart from './PriceChart';
 import PercentageTable from './PercentageTable';
 import { parseNum } from '@/utils';
+import { useRouter } from 'next/router';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
 dayjs.extend(relativeTime);
 
 export default function Token({ token, id }: any) {
+	const router = useRouter();
+
 	return (
 		<>
 			{/* Title + Logo */}
@@ -107,6 +110,14 @@ export default function Token({ token, id }: any) {
 
 			<div>
 				<PercentageTable token={token} />
+			</div>
+
+			<div className='flex justify-center'>
+				<button
+					onClick={() => router.push(`/PriceFeed`)}
+					className='p-6 px-20 rounded-xl bg-blue-500 hover:bg-blue-400/80 mt-10 font-semibold'>
+					Back
+				</button>
 			</div>
 		</>
 	);

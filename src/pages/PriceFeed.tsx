@@ -2,7 +2,7 @@ import Head from 'next/head';
 import useSWR from 'swr';
 import Layout from '@/components/Layout';
 import Footer from '@/components/Footer';
-import SearchBar from '@/components/SearchBar';
+import Nav from '@/components/Nav';
 import { fullCoinAPI, fetcher } from '@/utils';
 import TokenCard from '@/components/TokenCard';
 
@@ -12,7 +12,7 @@ export default function PriceFeed() {
 	return (
 		<>
 			<Head>
-				<title>Crypto Dashboard</title>
+				<title>CryptoWatch | Price Feed</title>
 				<meta
 					name='description'
 					content='Dashboard for viewing cryptocurrencies'
@@ -21,18 +21,18 @@ export default function PriceFeed() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SearchBar />
+			<Nav />
 			<main>
 				<Layout>
-					<h2 className='text-center text-4xl text-blue-500 font-bold tracking-wide'>
+					<h2 className='text-center text-4xl text-blue-500 font-bold tracking-wider'>
 						PRICE FEED
 					</h2>
 
 					<h4 className='text-center text-xl font-semibold pt-4'>
-						Top 100 Tokens By Market Cap
+						Top <span className='text-blue-500'>100</span> Tokens By Market Cap
 					</h4>
 
-					<div className='border-2 border-pink-400 mt-4 justify-center items-center text-center'>
+					<div className='mt-4 justify-center items-center text-center'>
 						<div>
 							{data?.map((token: any) => (
 								<TokenCard key={token.id} token={token} />

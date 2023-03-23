@@ -8,7 +8,7 @@ export default function TokenCard({ token }: any) {
 		<>
 			<div
 				onClick={() => router.push(`/tokens/${token.id}`)}
-				className='flex items-center mx-24 text-center justify-center border-b border-blue-400/75 hover:bg-slate-700'>
+				className='flex items-center mx-24 text-center justify-center border-b border-blue-400/75 hover:bg-blue-200'>
 				{/* Image */}
 				<div>
 					<img src={token.image} alt='logo' className='h-12' />
