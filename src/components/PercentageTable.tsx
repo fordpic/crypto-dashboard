@@ -1,9 +1,9 @@
 export default function PercentageTable({ token }: any) {
 	return (
 		<>
-			<table className='mt-6 lg:mt-4 mx-6 shadow-xl'>
+			<table className='w-[100%] text-center shadow-xl mt-8'>
 				<thead>
-					<tr className='bg-slate-500/50 p-1'>
+					<tr className='bg-slate-500/50 p-3'>
 						<th className='p-1'>24h</th>
 						<th>7d</th>
 						<th>14d</th>
