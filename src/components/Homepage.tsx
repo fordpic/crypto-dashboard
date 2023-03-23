@@ -7,7 +7,7 @@ export default function Homepage() {
 				</h1>
 			</div>
 
-			<div className='text-center text-xl font-semibold justify-center max-w-[50%] pt-24 border border-green-200'>
+			<div className='text-center text-xl font-semibold justify-center max-w-[50%] pt-36 border border-green-200'>
 				<p className=''>
 					<span className='text-blue-500'>CryptoWatch</span> is a place for
 					cryptocurrency users to come and find the most up-to-date information
