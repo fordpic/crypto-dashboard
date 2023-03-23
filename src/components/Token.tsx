@@ -22,15 +22,15 @@ export default function Token({ token, id }: any) {
 			</div>
 
 			<div className='flex justify-evenly pt-2 border-2 border-purple-500'>
-				<div className='flex-col items-center border-2 border-green-400'>
-					<h1 className='text-3xl pb-2 text-center text-blue-500 border-b border-dotted border-slate-500/80'>
+				<div className='flex-col items-center'>
+					<h1 className='text-3xl pb-4 text-center text-blue-500 border-b border-dotted border-slate-500/80'>
 						Price Chart (24hr)
 					</h1>
 					<PriceChart id={id} />
 				</div>
 
-				<div className='flex flex-col text-center w-[70%] min-h-full border-2 border-orange-500'>
-					<h1 className='text-3xl pb-2 text-blue-500 border-b border-dotted border-slate-500/80'>
+				<div className='flex flex-col text-center w-[70%] min-h-full'>
+					<h1 className='text-3xl pb-4 text-blue-500 border-b border-dotted border-slate-500/80'>
 						{token?.name} Price Statistics
 					</h1>
 

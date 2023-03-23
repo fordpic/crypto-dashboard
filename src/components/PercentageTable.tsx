@@ -3,8 +3,8 @@ export default function PercentageTable({ token }: any) {
 		<>
 			<table className='w-[100%] text-center shadow-xl mt-8'>
 				<thead>
-					<tr className='bg-slate-500/50 p-3'>
-						<th className='p-1'>24h</th>
+					<tr className='bg-slate-500/50'>
+						<th className='p-3'>24h</th>
 						<th>7d</th>
 						<th>14d</th>
 						<th>30d</th>
@@ -14,7 +14,7 @@ export default function PercentageTable({ token }: any) {
 
 				<tbody>
 					<tr className='bg-slate-500/70'>
-						<td>
+						<td className='p-2'>
 							{parsePercentage(token?.market_data.price_change_percentage_24h)}
 						</td>
 						<td>
