@@ -1,13 +1,17 @@
+import { useRouter } from 'next/router';
+
 export default function Homepage() {
+	const router = useRouter();
+
 	return (
 		<div className='flex flex-col items-center'>
 			<div className='text-center text-3xl font-bold'>
-				<h1 className='p-8'>
+				<h1 className='p-12 text-4xl'>
 					Welcome to <span className='text-blue-500'>CryptoWatch</span>!
 				</h1>
 			</div>
 
-			<div className='text-center text-xl font-semibold justify-center max-w-[50%] pt-36 border border-green-200'>
+			<div className='text-center text-xl font-semibold justify-center max-w-[50%] pt-36'>
 				<p className=''>
 					<span className='text-blue-500'>CryptoWatch</span> is a place for
 					cryptocurrency users to come and find the most up-to-date information
@@ -19,7 +23,13 @@ export default function Homepage() {
 				</h3>
 			</div>
 
-			<div>Top 10 tokens rendered here</div>
+			<div>
+				<button
+					onClick={() => router.push(`/TokenList`)}
+					className='p-6 px-14 rounded-xl bg-blue-500 hover:bg-blue-400/80 mt-10 font-semibold'>
+					Enter App
+				</button>
+			</div>
 		</div>
 	);
 }
