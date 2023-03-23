@@ -15,27 +15,30 @@ export default function TokenCard({ token }: any) {
 				</div>
 
 				{/* Name + Symbol */}
-				<div className='text-center items-center justify-center w-[30%]'>
+				<div className='text-center items-center justify-center w-[30%] font-semibold'>
 					{token?.name} - {token?.symbol.toUpperCase()}
 				</div>
 
 				{/* Current Price */}
 				<div className='w-[30%]'>
-					Current Price: ${parseNum(token.current_price)}
+					<span className='font-semibold'>Current Price:</span> $
+					{parseNum(token.current_price)}
 				</div>
 
 				{/* High + Low + % change */}
 				<div className='flex-col w-3/12'>
-					High (24h): ${parseNum(token?.high_24h)}
+					<span className='font-semibold'>High (24h):</span> $
+					{parseNum(token?.high_24h)}
 					<br />
-					Low (24h): ${parseNum(token?.low_24h)}
+					<span className='font-semibold'>Low (24h):</span> $
+					{parseNum(token?.low_24h)}
 					<br />
 					{token?.price_change_percentage_24h > 0 ? (
-						<span className='text-green-400'>
+						<span className='text-green-400 font-bold'>
 							{token?.price_change_percentage_24h.toFixed(2)}%
 						</span>
 					) : (
-						<span className='text-red-500'>
+						<span className='text-red-500 font-bold'>
 							{token?.price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
