@@ -23,50 +23,50 @@ export default function Token({ token, id }: any) {
 
 			<div className='flex justify-evenly pt-2 border-2 border-purple-500'>
 				<div className='flex-col items-center'>
-					<h1 className='text-3xl pb-4 text-center text-blue-500 border-b border-dotted border-slate-500/80'>
+					<h1 className='text-3xl pb-4 text-center text-blue-500'>
 						Price Chart (24hr)
 					</h1>
 					<PriceChart id={id} />
 				</div>
 
 				<div className='flex flex-col text-center w-[70%] min-h-full'>
-					<h1 className='text-3xl pb-4 text-blue-500 border-b border-dotted border-slate-500/80'>
+					<h1 className='text-3xl pb-4 text-blue-500'>
 						{token?.name} Price Statistics
 					</h1>
 
 					{/* Current Price */}
-					<h1 className='text-md pb-1 pt-9 border-b border-dotted border-slate-500/80'>
-						<span className='text-md'>Current:</span> $
+					<h1 className='text-md pb-1 pt-9 border-b border-dotted border-slate-500/80 mx-8'>
+						<span className='text-md font-semibold'>Current:</span> $
 						{parseNum(token?.market_data.current_price?.usd)}
 					</h1>
 
 					{/* High 24h */}
-					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80'>
-						<span className='text-md'>High (24h):</span> $
+					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80 mx-8'>
+						<span className='text-md font-semibold'>High (24h):</span> $
 						{parseNum(token?.market_data.high_24h.usd)}
 					</h1>
 
 					{/* Low 24h */}
-					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80'>
-						<span className='text-md'>Low (24h):</span> $
+					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80 mx-8'>
+						<span className='text-md font-semibold'>Low (24h):</span> $
 						{parseNum(token?.market_data.low_24h.usd)}
 					</h1>
 
 					{/* Total Volume */}
-					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80'>
-						<span className='text-md'>Total Volume:</span> $
+					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80 mx-8'>
+						<span className='text-md font-semibold'>Total Volume:</span> $
 						{parseNum(token?.market_data.total_volume.usd)}
 					</h1>
 
 					{/* Market Cap */}
-					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80'>
-						<span className='text-md'>Market Cap:</span> $
+					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80 mx-8'>
+						<span className='text-md font-semibold'>Market Cap:</span> $
 						{parseNum(token?.market_data?.market_cap.usd)}
 					</h1>
 
 					{/* ATH + date */}
-					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80'>
-						<span className='text-md'>All Time High:</span> $
+					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80 mx-8'>
+						<span className='text-md font-semibold'>All Time High:</span> $
 						{parseNum(token?.market_data.ath.usd)}{' '}
 						{token?.market_data?.ath_change_percentage > 0 ? (
 							<span className='text-green-400 pl-1'>
@@ -85,8 +85,8 @@ export default function Token({ token, id }: any) {
 					</h1>
 
 					{/* ATL + date */}
-					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80'>
-						<span className='text-md'>All Time Low:</span> $
+					<h1 className='text-md py-2 border-b border-dotted border-slate-500/80 mx-8'>
+						<span className='text-md font-semibold'>All Time Low:</span> $
 						{parseNum(token?.market_data.atl.usd)}{' '}
 						{
 							<span className='text-green-400 pl-1'>
