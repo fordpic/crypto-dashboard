@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout';
-import SearchBar from '@/components/SearchBar';
+import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import Token from '@/components/Token';
 import useSWR from 'swr';
@@ -15,7 +15,7 @@ export default function TokenPage() {
 
 	return (
 		<>
-			<SearchBar />
+			<Nav />
 			<Layout>
 				<Token id={id} token={data} />
 			</Layout>

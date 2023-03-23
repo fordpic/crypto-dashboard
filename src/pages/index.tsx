@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Layout from '@/components/Layout';
 import Homepage from '@/components/Homepage';
 import Footer from '@/components/Footer';
-import SearchBar from '@/components/SearchBar';
+import Nav from '@/components/Nav';
 
 export default function Home() {
 	return (
@@ -17,7 +17,7 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SearchBar />
+			<Nav />
 			<main>
 				<Layout>
 					<Homepage />

@@ -4,7 +4,7 @@ type LayoutProps = {
 
 export default function Layout(props: LayoutProps) {
 	return (
-		<div className='min-h-screen mx-auto border-2 border-red-500 p-12'>
+		<div className='min-h-screen mx-auto p-12 bg-gradient-to-r from-cyan-500 via-white to-blue-500'>
 			{props.children}
 		</div>
 	);

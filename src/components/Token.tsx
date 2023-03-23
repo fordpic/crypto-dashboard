@@ -21,7 +21,7 @@ export default function Token({ token, id }: any) {
 				</h1>
 			</div>
 
-			<div className='flex justify-evenly pt-2 border-2 border-purple-500'>
+			<div className='flex justify-evenly pt-4'>
 				<div className='flex-col items-center'>
 					<h1 className='text-3xl pb-4 text-center text-blue-500'>
 						Price Chart (24hr)
