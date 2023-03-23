@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import Layout from '@/components/Layout';
-import Homepage from '@/components/Homepage';
 import Footer from '@/components/Footer';
 import SearchBar from '@/components/SearchBar';
 
-export default function Home() {
+export default function PriceFeed() {
 	return (
 		<>
 			<Head>
@@ -20,7 +19,7 @@ export default function Home() {
 			<SearchBar />
 			<main>
 				<Layout>
-					<Homepage />
+					<div>Prices go here</div>
 				</Layout>
 			</main>
 			<Footer />

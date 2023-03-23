@@ -18,6 +18,8 @@ export default function Homepage() {
 					Powered by <span className='text-green-500'>CoinGecko</span>
 				</h3>
 			</div>
+
+			<div>Top 10 tokens rendered here</div>
 		</div>
 	);
 }
