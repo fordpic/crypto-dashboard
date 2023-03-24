@@ -22,6 +22,9 @@ export const fullCoinAPI =
 // API Endpoint by ID
 export const idCoinAPI = 'https://api.coingecko.com/api/v3/coins';
 
+// API Endpoint for list of coins with id's
+export const listCoinAPI = 'https://api.coingecko.com/api/v3/coins/list';
+
 // UNIX => Time Timestamp Converter
 export const toTimeFromUNIX = (timestamp: number): string => {
 	return new Date(timestamp).toLocaleTimeString();

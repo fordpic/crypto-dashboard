@@ -4,7 +4,14 @@ import Homepage from '@/components/Homepage';
 import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
 
+import { useRouter } from 'next/router';
+import useSWR from 'swr';
+import { listCoinAPI, idCoinAPI, fetcher } from '@/utils';
+
 export default function Home() {
+	const { data } = useSWR(listCoinAPI, fetcher);
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
@@ -17,7 +24,7 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<Nav />
+			<Nav data={data} />
 			<main>
 				<Layout>
 					<Homepage />

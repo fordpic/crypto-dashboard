@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import SearchBar from './SearchBar';
 
-export default function Nav() {
+export default function Nav({ data }: any) {
 	const router = useRouter();
 
 	return (
@@ -12,7 +12,7 @@ export default function Nav() {
 					className='text-4xl font-bold cursor-pointer text-blue-500'>
 					CryptoWatch
 				</h1>
-				<SearchBar />
+				<SearchBar data={data} />
 			</nav>
 		</div>
 	);
