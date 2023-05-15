@@ -1,38 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## CryptoWatch
 
-## Getting Started
+CryptoWatch is a site for quickly reviewing important metrics regarding cryptocurrencies. Powered by the CoinGecko API, CryptoWatch can pull up token-specific information for various assets of all market caps, complete with a dedicated chart and time-based statistics for each and every asset supported.
 
-First, run the development server:
+There are no user accounts and no paywalls - everything is completely free.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The deployed app can be found at this link: [CryptoWatch Deployment]()
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Technology Used
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- NextJS + TypeScript as the framework
+- TailwindCSS for styling
+- SWR for quick & efficient data fetching
+- Recharts for building intuitive price charts
+- Dayjs for date parsing
+- CoinGecko API for data
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Inspiration
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+When I was first starting to learn to program a few years ago, one of the very first applications I built was a similar one - a cryptocurrency app that used an API to pull and display data meaningfully. As my skills have naturally improved over time, I figured this was a great project to throw together to see how far I've come and how clean I can make the resulting codebase.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Next Steps
 
-## Learn More
+This is the MVP implementation of CryptoWatch - things can always be improved upon! Looking forward, I will be working to implement the following features into CryptoWatch as well:
 
-To learn more about Next.js, take a look at the following resources:
+- Search functionality
+- Additional time periods for charts with an option to toggle between them
+- Additional API(s) for more asset coverage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We can always learn something new from the community! If you would like to leave a comment or make an improvement, please make a PR and tag me (fordpic) so that I can be sure to see and review it. Thank you!
