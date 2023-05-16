@@ -4,7 +4,7 @@ CryptoWatch is a site for quickly reviewing important metrics regarding cryptocu
 
 There are no user accounts and no paywalls - everything is completely free.
 
-The deployed app can be found at this link: [CryptoWatch Deployment]()
+The deployed app is hosted on AWS Amplify and can be found at this link: [CryptoWatch Deployment](https://main.d1or44i85pw6f4.amplifyapp.com/)
 
 ### Technology Used
 
@@ -12,6 +12,7 @@ The deployed app can be found at this link: [CryptoWatch Deployment]()
 - TailwindCSS for styling
 - SWR for quick & efficient data fetching
 - Recharts for building intuitive price charts
+- AWS Amplify for hosting, CI/CD pipeline
 - Dayjs for date parsing
 - CoinGecko API for data
 
